@@ -6,6 +6,9 @@ import java.util.Hashtable;
 
 public class Guide
 {
+    /**
+     * The controller for viewing the list of guides.
+     */
     public static String list()
     {
         Hashtable<String, Object> values = new Hashtable<String, Object>();
@@ -16,6 +19,9 @@ public class Guide
         return BabysFirst.render_to_response("templates/guide_list.tpl", values);
     }
     
+    /**
+     * The controller for viewing the details of a particular guide.
+     */
     public static String details(String guide)
     {
         Hashtable<String, Object> values = new Hashtable<String, Object>();
