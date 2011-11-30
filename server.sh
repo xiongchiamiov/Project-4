@@ -6,7 +6,7 @@ RESP=/tmp/webresp
 
 while true ; do
 ( cat $RESP ) | nc -l 9000 | (
-REQ=`java CgiGet $(head -1)`
+REQ=`java ifixit.Main $(head -1)`
 echo "[`date '+%Y-%m-%d %H:%M:%S'`] $REQ" | head -1
 cat >$RESP <<EOF
 $REQ
