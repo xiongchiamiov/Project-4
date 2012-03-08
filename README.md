@@ -1,5 +1,6 @@
-This was a project for John Dalbey's CPE 305.  A lot of the code is shit due to
-time constraints and unfamiliarity with Swing.
+This was a project for John Dalbey's CPE 305.  There is a partial
+implementation of a CGI-like framework in Java.  This is all pretty terrible,
+but `server.sh` is interesting.
 
 If you are a computing student at Cal Poly who has not yet taken CPE 305, do
 not read this.
